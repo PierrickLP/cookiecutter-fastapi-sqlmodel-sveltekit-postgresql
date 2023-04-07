@@ -4,6 +4,9 @@
     "domain_main": "{{cookiecutter.project_slug}}.com",
     "domain_staging": "stag.{{cookiecutter.domain_main}}",
 
+    "docker_swarm_stack_name_main": "{{cookiecutter.domain_main|replace('.', '-')}}",
+    "docker_swarm_stack_name_staging": "{{cookiecutter.domain_staging|replace('.', '-')}}",
+
     "secret_key": "changethis",
     "first_superuser": "admin@{{cookiecutter.domain_main}}",
     "first_superuser_password": "changethis",
